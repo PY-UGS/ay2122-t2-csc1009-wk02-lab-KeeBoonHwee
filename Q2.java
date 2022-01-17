@@ -7,10 +7,12 @@ public class Q2
         Scanner input = new Scanner(System.in);
         System.out.print("Enter three numbers: ");
         float[] num = new float[4];
-        num[0] = input.nextFloat();
-        num[1] = input.nextFloat();
-        num[2] = input.nextFloat();
-        num[3] = (num[0] + num[1] + num[2]) / 3;
+        for(int i = 0 ; i < 3 ; i++)
+        {
+            num[i] = input.nextFloat();
+            num[3] += num[i];
+        }
+        num[3] /= 3;
         System.out.print("The average of " + num[0] + " "  + num[1] + " " +  num[2] + " is " + num[3]);
         input.close();
     }
