@@ -12,5 +12,6 @@ public class Q2
         num[2] = input.nextFloat();
         num[3] = (num[0] + num[1] + num[2]) / 3;
         System.out.print("The average of " + num[0] + " "  + num[1] + " " +  num[2] + " is " + num[3]);
+        input.close();
     }
 }
